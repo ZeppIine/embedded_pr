@@ -14,7 +14,10 @@
 #define SI 494
 
 int notes[TOTAL_NOTES] = {
-    SOL, SOL, RE, SOL};
+    SOL, SOL, SOL, SOL, RE, RE, SOL, SOL,
+    PA, PA, MI, RE, MI, MI, DO, DO,
+    SOL, SOL, SOL, SOL, RE, RE, SOL, SOL,
+    PA, PA, MI, RE, MI, MI, DO, DO};
 
 void musicPlay(int gpio)
 {
