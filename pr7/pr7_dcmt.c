@@ -30,12 +30,12 @@ int main(void)
 
     pinMode(PWM0, PWM_OUTPUT);
     pinMode(PWM1, PWM_OUTPUT);
-    pwmWrite(PWM1, 0);
-    pwmWrite(PWM0, 0);
+
     pwmSetMode(PWM_MODE_MS);
     pwmSetRange(range);
     pwmSetClock(divisor);
-
+    pwmWrite(PWM1, 0);
+    pwmWrite(PWM0, 0);
     while (1)
     {
         scanf("%d %d", &speed, &dir);
