@@ -8,12 +8,13 @@
 #define DO 262
 #define RE 294
 #define MI 330
+#define PA 350
+#define SOL 392
+#define RA 440
+#define SI 494
 
 int notes[TOTAL_NOTES] = {
-    MI, RE, DO, RE, MI, MI, MI, MI,
-    RE, RE, RE, RE, MI, MI, MI, MI,
-    MI, RE, DO, RE, MI, MI, MI, MI,
-    RE, RE, MI, RE, DO, DO, DO, DO};
+    SOL, SOL, RE, SOL};
 
 void musicPlay(int gpio)
 {
