@@ -112,6 +112,6 @@ int main()
         fflush(stdout);
         serialWrite(fd_serial, roll); // 입력 받은 데이터를 다시 보냄 (Echo)
         serialWrite(fd_serial, pitch);
-        delay(20);
+        delay(100);
     }
 }
