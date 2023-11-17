@@ -60,9 +60,9 @@ int main()
         printf("Step Motor Example with wiringPi\n");
         scanf("%d %d", &steps, &dir);
         if (dir)
-            one_two_Phase_CCW(steps);
-        else
             one_two_Phase_CW(steps);
+        else
+            one_two_Phase_CCW(steps);
         printf("Motor end\n");
     }
 

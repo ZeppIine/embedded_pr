@@ -33,7 +33,7 @@ int one_two_Phase_CCW(int steps)
         digitalWrite(pin_arr[1], one_two_phase[i % 8][1]);
         digitalWrite(pin_arr[2], one_two_phase[i % 8][2]);
         digitalWrite(pin_arr[3], one_two_phase[i % 8][3]);
-        delay(5);
+        delay(2);
     }
     return 0;
 }
@@ -60,9 +60,9 @@ int main()
         printf("Step Motor Example with wiringPi\n");
         scanf("%d %d", &angle, &dir);
         if (dir)
-            one_two_Phase_CCW(angle * 11.38);
-        else
             one_two_Phase_CW(angle * 11.38);
+        else
+            one_two_Phase_CCW(angle * 11.38);
         printf("Motor end\n");
     }
 
